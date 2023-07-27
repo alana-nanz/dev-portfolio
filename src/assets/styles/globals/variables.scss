@@ -1,0 +1,87 @@
+/* =====================================================================
+	Colors
+	==================================================================== */
+
+	$primary-color											: #4fc08d;
+	$primary-color-light								: lighten($primary-color, 5%);
+	$primary-color-dark									: darken($primary-color, 5%);
+
+	$alt-color													: #000000;
+	$alt-color-light										: lighten($alt-color, 5%);
+	$alt-color-dark											: darken($alt-color, 5%);
+
+	$gray																: #999999;
+	$gray-light													: #e5e5e5;
+	$gray-dark													: #666666;
+
+/* =====================================================================
+	Layout
+	==================================================================== */
+
+	$z-bottom														: 100;
+	$z-bottom-mid												: 200;
+	$z-mid															: 300;
+	$z-top-mid													: 400;
+	$z-top															: 500;
+
+	$z-modifier													: 50;
+
+/* =====================================================================
+	Spacing
+	==================================================================== */
+
+	$margin-xs													: .5em;
+	$margin-sm													: 1em;
+	$margin-md													: 2em;
+	$margin-lg													: 3em;
+	$margin-xl													: 5em;
+	$margin-xxl													: 8em;
+
+/* =====================================================================
+	Fonts
+	==================================================================== */
+
+	$body-font													:	sans-serif;
+
+	$letter-spacing-base								: .02em;
+	$letter-spacing-plus								: .04em;
+
+	$line-height-snug										: 1;
+	$line-height-relaxed								: 1.2;
+
+	$font-weight-light									: 300;
+	$font-weight-regular								: 500;
+	$font-weight-bold										: 700;
+
+/* =====================================================================
+	Transitions
+	==================================================================== */
+
+	$ui-transition-duration-short				: .1s;
+	$ui-transition-duration							: .3s;
+	$ui-transition-duration-long				: .6s;
+
+/* ==========================================================================
+	Media Break points (Tailwind CSS defaults)
+	========================================================================= */
+
+	$mobile-restrict-orientation				: 540px; // created to include smaller phones like iPhone 8
+	$mobile-portrait										: 640px;
+	$mobile-landscape										: 640px;
+	$tablet-portrait-min								: ($mobile-portrait + 1);
+	$tablet-portrait-max								: 768px;
+	$tablet-landscape										: 1024px;
+	$desktop														: 1280px;
+	$desktop-lg													:	1536px;
+	/* chromebook specific */
+	$desktop-sm													: 1130px;
+	$desktop-sm-height									: 900px; 
+
+/* ==========================================================================
+	UI
+	========================================================================= */
+
+	$border-width-xs										: 2px;
+	$border-width-sm										: 3px;
+	$border-width-md										: 5px;
+	$border-width-lg										: 8px;

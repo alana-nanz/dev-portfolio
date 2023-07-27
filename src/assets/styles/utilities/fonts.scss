@@ -1,0 +1,38 @@
+/*
+* Add font groups to the $fonts map to automatically generate
+* @font-face declarations. Each entry in $fonts should itself be a map.
+* The main $fonts key should be the name of the font-family.  Each entry within
+* that map should be a Font Weight => Filename pair.
+*/
+
+$font-dir: "/build/fonts/";
+$fonts: (
+    // Oduda: (
+	// 	300: "Oduda-Light",
+	// ),
+);
+
+/* =====================================================================
+	Font Face Mixin
+	==================================================================== */
+
+	@mixin font-face-declaration($name, $weight, $file) {
+		@font-face {
+			font-family: $name;
+			font-weight: $weight;
+			src: url("#{$font-dir}#{$file}.eot") format("eot"),
+				url("#{$font-dir}#{$file}.woff2") format("woff2"),
+				url("#{$font-dir}#{$file}.woff") format("woff"),
+				url("#{$font-dir}#{$file}.otf") format("truetype");
+		}
+	}
+
+/* =====================================================================
+	Font Iterator
+	==================================================================== */
+
+	@each $name, $weights in $fonts {
+		@each $weight, $file in $weights {
+			@include font-face-declaration($name, $weight, $file);
+		}
+	}

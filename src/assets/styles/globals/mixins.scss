@@ -1,0 +1,80 @@
+@import "functions.scss";
+
+/* =====================================================================
+	Responsive // Horizontal / Device Mixins
+	==================================================================== */
+
+	@mixin media-query($query) {
+		@media ($query) { @content; }
+	}
+
+	@mixin mobile() {
+		@include media-query("max-width: #{$mobile-portrait}") { @content; }
+	}
+
+	@mixin mobile-restrict-orientation() {
+		@include media-query("max-height: #{$mobile-restrict-orientation}") { @content; }
+	}
+
+	@mixin tablet-landscape-max() {
+    @include media-query("max-width: #{$tablet-landscape}") {@content; }
+  }
+
+	@mixin tablet-only() {
+		@include media-query("min-width: #{$tablet-portrait-min}) and (max-width: #{$desktop}") { @content; }
+	}
+
+	@mixin tablet() {
+		@include media-query("min-width: #{$tablet-portrait-min}") { @content; }
+	}
+
+	@mixin desktop-sm() {
+		@include media-query ("max-height: #{$desktop-sm-height}) and (min-width: #{$desktop}") { @content; }
+	}
+
+	@mixin desktop() {
+		@include media-query("min-width: #{$desktop}") { @content; }
+	}
+
+	@mixin desktop-lg() {
+		@include media-query("min-width: #{$desktop-lg}") { @content; }
+	}
+
+/* =====================================================================
+	Positioning
+	==================================================================== */
+
+	@mixin absolute {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	@mixin cover {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%; // webkit fix
+		height: 100%; // webkit fix
+	}
+
+	@mixin center {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	@mixin flex-column-center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
