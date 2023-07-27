@@ -1,5 +1,5 @@
 {
-  "name": "vue-3-wordpress-theme",
+  "name": "vue-starter-app",
   "version": "0.0.0",
   "private": true,
   "description": "Vue layer of wp-vue-starter-theme",
@@ -13,8 +13,8 @@
     "container-query-polyfill": "^0.1.2",
     "fast-glob": "^3.2.11",
     "pinia": "^2.0.13",
-    "vite": "^2.9.5",
-    "vue": "^3.2.33",
+    "vite": "^4.4.7",
+    "vue": "^3.3.4",
     "vue-router": "^4.0.14",
     "vue-svg-inline-plugin": "^2.2.0"
   },
