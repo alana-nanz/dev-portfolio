@@ -1,0 +1,42 @@
+{
+    "folders": [
+			{
+				"name": "APP",
+				"path": "./"
+			},
+			{
+				"name": "SRC",
+				"path": "./src/"
+			},
+			{
+				"name": "COMPONENTS",
+				"path": "./src/components"
+			},
+			{
+				"name": "ROUTER",
+				"path": "./src/router"
+			},
+			{
+				"name": "STORES",
+				"path": "./src/stores"
+			},
+		],
+    "settings": {
+        "terminal.integrated.cwd": "${workspaceFolder:APP}",
+        "files.exclude": {
+            "src": true,
+            "components": true,
+            "stores": true,
+            "router": true,
+        },
+        "workbench.colorCustomizations": {
+					"statusBar.background": "#4fc08d",
+					"statusBarItem.hoverBackground": "#3aa273",
+					"statusBar.foreground": "#15202b",
+					"statusBarItem.remoteBackground": "#4fc08d",
+					"statusBarItem.remoteForeground": "#15202b",
+					"sash.hoverBorder": "#75cda5"
+				},
+				"peacock.color": "#4fc08d",
+    }
+}

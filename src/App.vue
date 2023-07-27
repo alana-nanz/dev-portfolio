@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss">
 @import '../public/bootstrap-reboot.min.css';
-@import 'assets/styles/utilities/index.scss';
+@import 'assets/styles/utilities/';
 @import 'assets/base.css';
 
 html, body {
