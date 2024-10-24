@@ -1,6 +1,4 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
-import { useApiStore } from '@/stores/api.store';
-import { CONFIG_ENDPOINT } from '@/constants';
 
 export const useConfigStore = defineStore('config', {
 	state: () => ({
@@ -13,14 +11,9 @@ export const useConfigStore = defineStore('config', {
 	},
 	actions: {
 		async load() {
-			let config = window.DATA;
+			const config = window.DATA;
 
-			if (!config) {
-				const apiStore = useApiStore();
-				config = await apiStore.get({ endpoint: CONFIG_ENDPOINT });
-			}
-
-			this.data = config;
+			// this.data = config;
 		},
 	},
 });
