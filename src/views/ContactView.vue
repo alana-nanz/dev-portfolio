@@ -9,8 +9,14 @@
 		</div>
 		<div class="contact-section">
 			<p class="title">Follow me</p>
-			<a href="https://github.com/alana-nanz" target="_blank"><LinkedinIcon class="icon" /></a>
-			<a href="https://www.linkedin.com/in/alanananz" target="_blank"><GithubIcon class="icon" /></a>
+			<a href="https://www.linkedin.com/in/alanananz" target="_blank">
+				<LinkedinIcon class="icon" />
+				<p class="sr-only">Linkedin Icon</p>
+			</a>
+			<a href="https://github.com/alana-nanz" target="_blank">
+				<GithubIcon class="icon" />
+				<p class="sr-only">Github Icon</p>
+			</a>
 		</div>
 		<div class="contact-section">
 			<p class="title">Meet me</p>
