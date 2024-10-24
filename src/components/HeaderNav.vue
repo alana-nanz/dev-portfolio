@@ -13,10 +13,10 @@
 				</li>
 			</ul>
 		</nav>
-		<!-- <div class="copyright">
+		<div class="copyright">
 			<Icon class="icon" />
 			<p>Copyright 2024 | Alana Nanz</p>
-		</div> -->
+		</div>
 	</header>
 </template>
 

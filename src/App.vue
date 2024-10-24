@@ -57,17 +57,17 @@ html, body {
 		display: flex;
 		justify-content: center;
 		gap: $spacing-md;
-		padding: $spacing-lg $spacing-xl;
+		padding: $spacing-lg;
 	}
 
-	@include desktop { padding: $spacing-xl $spacing-xxl; }
+	@include desktop { padding: $spacing-xl; }
 }
 
 .header-nav,
 .view {
 	@include tablet {
 		width: 50%;
-		max-width: 600px;
+		max-width: 500px;
 	}
 }
 </style>
