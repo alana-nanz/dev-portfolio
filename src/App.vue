@@ -1,39 +1,30 @@
 <template>
 	<div class="wrapper">
-		<MckLogoSVG class="logo" width="125" height="125" />
-		<RouterView v-slot="{ Component }" v-if="loaded">
-			<transition :name="transitionName" :mode="transitionMode"
-				@before-enter="inTransition = true"
-				@after-enter="inTransition = false">
+		<HeaderNav class="header-nav" />
+		<RouterView v-slot="{ Component }" class="view">
+			<transition name="fade" mode="out-in">
 				<component :is="Component" />
 			</transition>
 		</RouterView>
-		<h3 v-else>No config data could be loaded. Please make sure the WordPress site
-			is running, and the API urls are set correctly in the .env file.</h3>
 	</div>
 </template>
 
 <script>
-import { ref } from "vue";
 import { storeToRefs } from "pinia";
-import { useRouterTransition } from '@/composables/router-transition';
 import { useConfigStore } from '@/stores/config.store';
-import MckLogoSVG from "@/assets/logo.svg";
+import HeaderNav from '@/components/HeaderNav.vue';
 
 export default {
 	name: "App",
 	components: {
-		MckLogoSVG,
+		HeaderNav,
 	},
 	setup() {
-		const inTransition = ref(false);
-		const { name: transitionName, mode: transitionMode } = useRouterTransition();
-
 		const config = useConfigStore();
 		const { loaded } = storeToRefs(config);
 		config.load();
 
-		return { loaded, inTransition, transitionName, transitionMode };
+		return { loaded };
 	},
 };
 </script>
@@ -48,15 +39,27 @@ html, body {
 	margin: 0;
 	overflow: hidden;
 	font-family: $body-font;
-}
-
-.wrapper {
-	height: 100%;
-	width: 100%;
+	color: $dark-color;
 }
 
 #app {
 	height: 100%;
 	margin: 0 auto;
+	background-color: $light-color;
+}
+
+.wrapper {
+	max-height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: $spacing-md;
+	padding: $spacing-lg $spacing-xxl;
+}
+
+.header-nav,
+.view {
+	width: 50%;
+	max-width: 600px;
 }
 </style>
