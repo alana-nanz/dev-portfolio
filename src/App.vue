@@ -51,15 +51,23 @@ html, body {
 .wrapper {
 	max-height: 100%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	gap: $spacing-md;
-	padding: $spacing-lg $spacing-xxl;
+	padding: $spacing-sm;
+	
+	@include tablet {
+		display: flex;
+		justify-content: center;
+		gap: $spacing-md;
+		padding: $spacing-lg $spacing-xl;
+	}
+
+	@include desktop { padding: $spacing-xl $spacing-xxl; }
 }
 
 .header-nav,
 .view {
-	width: 50%;
-	max-width: 600px;
+	@include tablet {
+		width: 50%;
+		max-width: 600px;
+	}
 }
 </style>

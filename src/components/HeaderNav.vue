@@ -2,8 +2,7 @@
 	<header>
 		<h1>Alana Nanz</h1>
 		<h2>Developer</h2>
-		<p>Proficient at transforming design mockups into user-friendly,
-			<br>responsive applications with meticulous attention to detail.
+		<p class="intro">Proficient at transforming design mockups into user-friendly, responsive applications with meticulous attention to detail.
 		</p>
 		<nav>
 			<ul>
@@ -14,10 +13,10 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="copyright">
+		<!-- <div class="copyright">
 			<Icon class="icon" />
 			<p>Copyright 2024 | Alana Nanz</p>
-		</div>
+		</div> -->
 	</header>
 </template>
 
@@ -60,11 +59,33 @@ h1 {
 
 h2 { margin-bottom: $spacing-xs; }
 
+.intro { max-width: 500px; }
+
 p { margin-bottom: 0; }
 
 ul {
-	margin: $spacing-lg 0 $spacing-xxl;
+	margin: $spacing-sm 0 0;
 	padding: 0;
+	display: flex;
+	gap: $spacing-md;
+	position: relative;
+	width: 100%;
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $accent-color;
+		position: absolute;
+		bottom: $spacing-xs;
+	}
+
+	@include tablet {
+		display: block;
+		margin: $spacing-lg 0 $spacing-xxl;
+
+		&::after { display: none; }
+	}
 }
 
 li {

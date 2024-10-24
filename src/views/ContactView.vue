@@ -42,10 +42,16 @@ export default {
 <style lang="scss" scoped>
 h3 {
 	font-size: var(--fs-500);
-	margin-bottom: $spacing-md;
+	margin-bottom: $spacing-sm;
+
+	@include tablet { margin-bottom: $spacing-md; }
 }
 
-.contact-section { margin: $spacing-md 0; }
+.contact-section {
+	margin: $spacing-sm 0;
+
+	@include tablet { margin: $spacing-md 0; }
+}
 
 .title { font-weight: $font-weight-bold; }
 
