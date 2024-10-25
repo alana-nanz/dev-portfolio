@@ -52,7 +52,7 @@ html, body {
 	max-height: 100%;
 	width: 100%;
 	padding: $spacing-sm;
-	
+
 	@include tablet {
 		display: flex;
 		justify-content: center;
@@ -67,7 +67,7 @@ html, body {
 .view {
 	@include tablet {
 		width: 50%;
-		max-width: 500px;
+		max-width: 600px;
 	}
 }
 </style>

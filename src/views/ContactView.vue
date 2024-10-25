@@ -21,7 +21,7 @@
 		<div class="contact-section">
 			<p class="title">Meet me</p>
 			<p>Cary, NC</p>
-			<p>Let's grab coffee virtually or in-person!</p>
+			<p>Let's chat virtually or in-person!</p>
 		</div>
 	</div>
 </template>

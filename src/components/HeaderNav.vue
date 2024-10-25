@@ -30,7 +30,7 @@ export default {
 	},
 	data() {
 		return {
-			sections: ['About', 'Projects', 'Skills', 'Contact'],
+			sections: ['About', 'Work', 'Skills', 'Contact'],
 		};
 	},
 	methods: {
@@ -82,7 +82,7 @@ ul {
 
 	@include tablet {
 		display: block;
-		margin: $spacing-lg 0 $spacing-xxl;
+		margin: $spacing-lg 0;
 
 		&::after { display: none; }
 	}
@@ -108,6 +108,7 @@ a {
 	align-items: flex-end;
 	gap: $spacing-xs;
 	font-size: var(--fs-300);
+	margin-top: 15rem;
 }
 
 .icon {

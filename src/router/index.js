@@ -1,7 +1,7 @@
 import { createRouter, createMemoryHistory } from 'vue-router';
 import About from "@/views/AboutView.vue";
 import Contact from "@/views/ContactView.vue";
-import Projects from "@/views/ProjectsView.vue";
+import Work from "@/views/WorkView.vue";
 import Skills from "@/views/SkillsView.vue";
 
 const router = createRouter({
@@ -13,9 +13,9 @@ const router = createRouter({
 			component: About,
 		},
 		{
-			path: '/projects',
-			name: 'projects',
-			component: Projects,
+			path: '/work',
+			name: 'work',
+			component: Work,
 		},
 		{
 			path: '/skills',
