@@ -35,25 +35,22 @@ export default {
 @import 'assets/base.css';
 
 html, body {
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	font-family: $body-font;
+	background-color: $light-color;
 	color: $dark-color;
+	font-family: $body-font;
+	margin: 0;
 }
 
 #app {
-	height: 100%;
 	margin: 0 auto;
-	background-color: $light-color;
 }
 
 .wrapper {
-	max-height: 100%;
 	width: 100%;
 	padding: $spacing-sm;
 
 	@include tablet {
+		max-height: 100%;
 		display: flex;
 		justify-content: center;
 		gap: $spacing-md;

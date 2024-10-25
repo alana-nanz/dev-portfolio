@@ -13,10 +13,10 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="copyright">
+		<!-- <div class="copyright">
 			<Icon class="icon" />
 			<p>Copyright 2024 | Alana Nanz</p>
-		</div>
+		</div> -->
 	</header>
 </template>
 
@@ -108,7 +108,9 @@ a {
 	align-items: flex-end;
 	gap: $spacing-xs;
 	font-size: var(--fs-300);
-	margin-top: 15rem;
+	margin: $spacing-xs 0;
+
+	@include tablet { margin: 15rem 0 0; }
 }
 
 .icon {

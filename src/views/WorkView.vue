@@ -62,7 +62,7 @@ export default {
 .projects {
 	display: flex;
 	flex-wrap: wrap;
-	gap: $spacing-md $spacing-sm;
+	gap: $spacing-md;
 }
 
 .project {
@@ -82,11 +82,7 @@ export default {
 	}
 }
 
-.name {
-	font-weight: $font-weight-bold;
-}
+.name { font-weight: $font-weight-bold; }
 
-p {
-	margin: 0;
-}
+p { margin: 0; }
 </style>

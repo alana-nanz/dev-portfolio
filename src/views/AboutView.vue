@@ -34,11 +34,14 @@ export default {
 .logos {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: $spacing-sm;
 	margin: $spacing-sm 0 $spacing-md;
 }
 
 .logo {
-	width: 130px;
+	width: 40%;
+
+	@include tablet { width: 130px; }
 }
 </style>
