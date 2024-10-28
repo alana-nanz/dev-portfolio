@@ -2,7 +2,7 @@
 	<header>
 		<h1>Alana Nanz</h1>
 		<h2>Developer</h2>
-		<p class="intro">Proficient at transforming design mockups into user-friendly, responsive applications with meticulous attention to detail.
+		<p class="intro">Proficient at transforming design mockups into user-friendly, responsive applications with meticulous attention to detail. Enjoys
 		</p>
 		<nav>
 			<ul>
@@ -13,24 +13,15 @@
 				</li>
 			</ul>
 		</nav>
-		<!-- <div class="copyright">
-			<Icon class="icon" />
-			<p>Copyright 2024 | Alana Nanz</p>
-		</div> -->
 	</header>
 </template>
 
 <script>
-import Icon from "@/assets/images/icon.svg";
-
 export default {
 	name: "HeaderNav",
-	components: {
-		Icon,
-	},
 	data() {
 		return {
-			sections: ['About', 'Work', 'Skills', 'Contact'],
+			sections: ['About', 'Work', 'Skills'],
 		};
 	},
 	methods: {
@@ -101,19 +92,5 @@ a {
 		color: $accent-color;
 		font-weight: $font-weight-bold;
 	}
-}
-
-.copyright {
-	display: flex;
-	align-items: flex-end;
-	gap: $spacing-xs;
-	font-size: var(--fs-300);
-	margin: $spacing-xs 0;
-
-	@include tablet { margin: 15rem 0 0; }
-}
-
-.icon {
-	height: 25px;
 }
 </style>

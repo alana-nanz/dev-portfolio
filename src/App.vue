@@ -6,18 +6,21 @@
 				<component :is="Component" />
 			</transition>
 		</RouterView>
+		<FooterContact class="footer" />
 	</div>
 </template>
 
 <script>
 import { storeToRefs } from "pinia";
-import { useConfigStore } from '@/stores/config.store';
-import HeaderNav from '@/components/HeaderNav.vue';
+import { useConfigStore } from "@/stores/config.store";
+import HeaderNav from "@/components/HeaderNav.vue";
+import FooterContact from "@/components/FooterContact.vue";
 
 export default {
 	name: "App",
 	components: {
 		HeaderNav,
+		FooterContact,
 	},
 	setup() {
 		const config = useConfigStore();
@@ -48,6 +51,7 @@ html, body {
 .wrapper {
 	width: 100%;
 	padding: $spacing-sm;
+	position: relative;
 
 	@include tablet {
 		max-height: 100%;
@@ -66,5 +70,11 @@ html, body {
 		width: 50%;
 		max-width: 600px;
 	}
+}
+
+.footer {
+	position: absolute;
+	bottom: -$spacing-lg;
+	left: $spacing-xl;
 }
 </style>
