@@ -55,7 +55,7 @@ html, body {
 	padding: $spacing-sm;
 	margin: 0 auto;
 	position: relative;
-	
+
 	@include tablet {
 		max-height: 1000px;
 		display: flex;
