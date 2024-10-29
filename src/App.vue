@@ -49,32 +49,45 @@ html, body {
 }
 
 .wrapper {
+	height: 100vh;
 	width: 100%;
+	max-width: 1400px;
 	padding: $spacing-sm;
+	margin: 0 auto;
 	position: relative;
-
+	
 	@include tablet {
-		max-height: 100%;
+		max-height: 1000px;
 		display: flex;
 		justify-content: center;
 		gap: $spacing-md;
 		padding: $spacing-lg;
 	}
 
-	@include desktop { padding: $spacing-xl; }
+	@include desktop {
+		max-height: 800px;
+		padding: $spacing-xl;
+	}
 }
 
 .header-nav,
 .view {
-	@include tablet {
-		width: 50%;
-		max-width: 600px;
-	}
+	@include tablet { width: 50%;}
 }
 
 .footer {
-	position: absolute;
-	bottom: -$spacing-lg;
-	left: $spacing-xl;
+	margin: $spacing-lg 0 0;
+
+	@include tablet {
+		margin: 0;
+		position: absolute;
+		bottom: $spacing-lg;
+		left: $spacing-lg;
+	}
+
+	@include desktop {
+		bottom: $spacing-xl;
+		left: $spacing-xl;
+	}
 }
 </style>

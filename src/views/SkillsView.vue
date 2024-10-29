@@ -59,13 +59,16 @@ ul {
 	padding: 0;
 
 	li {
+		@include flex-column-center;
 		list-style-type: none;
 		background-color: $accent-color-light;
 		border-radius: 10px;
 		text-align: center;
 		text-transform: uppercase;
 		padding: $spacing-xs;
-		width: 30%;
+		width: 40%;
+
+		@include desktop { width: 30%; }
 	}
 }
 </style>

@@ -62,11 +62,14 @@ export default {
 .projects {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	gap: $spacing-md;
 }
 
 .project {
-	width: calc(50% - $spacing-sm);
+	width: 100%;
+
+	@include tablet { width: calc(50% - $spacing-sm); }
 }
 
 .project-img {
