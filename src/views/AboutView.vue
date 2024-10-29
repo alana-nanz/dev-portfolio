@@ -21,8 +21,8 @@ export default {
 		return {
 			logos: [
 				{ name: "Little Caesars", img: LittleCaesars },
-				{ name: "Popeyes", img: Popeyes },
 				{ name: "Sherwin Williams", img: Sherwin },
+				{ name: "Popeyes", img: Popeyes },
 				{ name: "Indivior", img: Indivior },
 			],
 		};
