@@ -25,7 +25,7 @@ export default {
 				},
 				{
 					category: "Tools",
-					type: ["Git", "Figma", "WordPress", "Veeva", "Salesforce", "Google Analytics", "APIs", "Jira"],
+					type: ["Git", "Figma", "Vercel Hosting", "Google Analytics", "APIs", "Jira", "WordPress", "Veeva", "Salesforce"],
 				},
 			],
 		};

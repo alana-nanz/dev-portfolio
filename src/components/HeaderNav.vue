@@ -4,6 +4,8 @@
 		<h2>Developer</h2>
 		<p class="intro">Proficient at transforming design mockups into user-friendly, responsive applications with meticulous attention to detail.
 		</p>
+		<p class="intro">Enthusiastic about creating scalable architecture and writing clean code.
+		</p>
 		<nav>
 			<ul>
 				<li v-for="section in sections" :key="section">
@@ -50,7 +52,10 @@ h1 {
 
 h2 { margin-bottom: $spacing-xs; }
 
-.intro { max-width: 500px; }
+.intro {
+	max-width: 475px;
+	margin-bottom: $spacing-xs;
+}
 
 p { margin-bottom: 0; }
 
