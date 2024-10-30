@@ -42,6 +42,6 @@ export default {
 .logo {
 	width: 40%;
 
-	@include tablet { width: 130px; }
+	@include tablet { width: 120px; }
 }
 </style>
