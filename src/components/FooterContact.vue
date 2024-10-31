@@ -15,6 +15,7 @@ import LinkedinIcon from "@/assets/images/linkedin.svg";
 import GithubIcon from "@/assets/images/github.svg";
 import ResumeIcon from "@/assets/images/file.svg";
 import EmailIcon from "@/assets/images/envelope.svg";
+import Resume from "@/assets/Alana_Nanz_Resume.pdf";
 
 export default {
 	name: "FooterContact",
@@ -30,7 +31,7 @@ export default {
 				{ link: "https://www.linkedin.com/in/alanananz", svg: "LinkedinIcon", copy: "Linkedin Icon" },
 				{ link: "https://github.com/alana-nanz", svg: "GithubIcon", copy: "Github Icon" },
 				{ link: "mailto:readalana@gmail.com", svg: "EmailIcon", copy: "Email Icon" },
-				{ link: "", svg: "ResumeIcon", copy: "Resume Icon" },
+				{ link: Resume, svg: "ResumeIcon", copy: "Resume Icon" },
 			],
 		};
 	},
