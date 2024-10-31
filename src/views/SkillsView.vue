@@ -17,7 +17,7 @@ export default {
 			skills: [
 				{
 					category: "Languages",
-					type: ["HTML", "CSS", "Javascript"],
+					type: ["HTML", "CSS / SCSS", "Javascript"],
 				},
 				{
 					category: "Frameworks & Libraries",
