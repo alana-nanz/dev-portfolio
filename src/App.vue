@@ -11,8 +11,6 @@
 </template>
 
 <script>
-import { storeToRefs } from "pinia";
-import { useConfigStore } from "@/stores/config.store";
 import HeaderNav from "@/components/HeaderNav.vue";
 import FooterContact from "@/components/FooterContact.vue";
 
@@ -21,13 +19,6 @@ export default {
 	components: {
 		HeaderNav,
 		FooterContact,
-	},
-	setup() {
-		const config = useConfigStore();
-		const { loaded } = storeToRefs(config);
-		config.load();
-
-		return { loaded };
 	},
 };
 </script>
