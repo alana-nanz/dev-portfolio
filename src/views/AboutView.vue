@@ -1,6 +1,6 @@
 <template>
 	<div class="about view">
-		<p>Currently, I'm a <strong>Developer</strong> at <a href="https://cylndr.com/" target="_blank">Cylndr Studios</a>, the production team behind advertising agency, <a href="https://mckinney.com/" target="_blank">McKinney</a>. I started as a Junior Developer in 2022 and was promoted after only 18 months. At Cylndr, I've developed enterprise websites, landing pages, games, animated banners, and web applications for internal initiatives and clients, including:</p>
+		<p>Currently, I'm a <strong>Developer</strong> at <a href="https://cylndr.com/" target="_blank">Cylndr Studios</a>, the production team behind advertising agency, <a href="https://mckinney.com/" target="_blank">McKinney</a>. I started as a Junior Developer in 2022 and was promoted after only 18 months. At Cylndr, I've developed enterprise websites, landing pages, interactive games, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
 		<div class="logos">
 			<img class="logo" v-for="logo in logos" :key="logo" :src="logo.img" :alt="logo.name">
 		</div>
@@ -34,13 +34,16 @@ export default {
 .logos {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	gap: $spacing-sm;
+	gap: $spacing-md;
 	margin: $spacing-sm 0 $spacing-md;
+
+	@include tablet { gap: $spacing-sm; }
 }
 
 .logo {
-	width: 40%;
+	width: calc(50% - $spacing-md);
 
 	@include tablet { width: 120px; }
 }

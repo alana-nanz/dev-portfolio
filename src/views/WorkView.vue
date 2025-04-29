@@ -43,14 +43,14 @@ export default {
 					image: BrandAIImg,
 					link: "https://mckinney.com/brandai/",
 					description: "Proprietary AI app for measuring a brand's market attention compared to its competitors",
-					tools: "API, Highcharts, Jira",
+					tools: "API, Vue, Highcharts, Jira",
 				},
 				{
 					name: "McKinney",
 					image: McKinneyImg,
 					link: "https://mckinney.com/",
 					description: "Primary agency website with reusable custom block components",
-					tools: "Storybook, WordPress custom theme and ACF fields ",
+					tools: "Storybook, WordPress, Vue, custom Gutenberg blocks, Advanced Custom Fields (ACF)",
 				},
 			],
 		};

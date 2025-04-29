@@ -17,11 +17,11 @@ export default {
 			skills: [
 				{
 					category: "Languages",
-					type: ["HTML", "CSS / SCSS", "Javascript"],
+					type: ["HTML", "CSS / SCSS", "Javascript", "TypeScript"],
 				},
 				{
 					category: "Frameworks & Libraries",
-					type: ["Vue.js", "Nuxt.js", "Storybook.js"],
+					type: ["Vue.js", "Nuxt.js", "Storybook.js", "Highcharts"],
 				},
 				{
 					category: "Tools",
