@@ -61,7 +61,7 @@ export default {
 					image: PrideImg,
 					link: "https://heartingpride.com/",
 					description: "Digital hub featuring Pride content and LGBTQ+ creators",
-					tools: "Firebase, Python, Google Sheets API, Google Cloud Storage",
+					tools: "Firebase, Python, Google Drive & Sheets APIs, Google Cloud Storage",
 				},
 				{
 					name: "Attention Arc",
