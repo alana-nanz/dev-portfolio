@@ -4,7 +4,7 @@
 		<div class="logos">
 			<img class="logo" v-for="logo in logos" :key="logo" :src="logo.img" :alt="logo.name">
 		</div>
-		<p>I bring a blend of technical expertise and creative problem-solving to my work after transitioning from a career in nonprofit arts management. I've always been creative, with a strong eye for detail. After working in platforms like WordPress and Drupal, I wanted to see what's under the hood and learn how to code. After creating my first website from scratch, I was hooked!</p>
+		<p>I bring a blend of technical expertise and creative problem-solving to my work after transitioning from a career in nonprofit arts management. I've always been creative, with a strong eye for detail. After working in platforms like WordPress and Drupal, I wanted to see what was under the hood and learn how to code. After creating my first website from scratch, I was hooked!</p>
 		<p>When I'm not coding, you can find me doing puzzles, cooking new recipes, walking the local trails with my bernedoodle, or going on adventures with my two daughters and wonderful husband.</p>
 	</div>
 </template>
@@ -37,7 +37,8 @@ export default {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: $spacing-md;
-	margin: $spacing-sm 0 $spacing-md;
+	margin: $spacing-md auto;
+	max-width: 600px;
 
 	@include tablet { gap: $spacing-sm; }
 }

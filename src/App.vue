@@ -47,7 +47,7 @@ html, body {
 	margin: 0 auto;
 	position: relative;
 
-	@include tablet {
+	@include tablet-landscape {
 		max-height: 1000px;
 		display: flex;
 		justify-content: center;
@@ -63,13 +63,13 @@ html, body {
 
 .header-nav,
 .view {
-	@include tablet { width: 50%;}
+	@include tablet-landscape { width: 50%; }
 }
 
 .footer {
 	margin: $spacing-lg 0 0;
 
-	@include tablet {
+	@include tablet-landscape {
 		margin: 0;
 		position: absolute;
 		bottom: $spacing-lg;

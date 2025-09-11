@@ -6,7 +6,7 @@
 				<p class="sr-only">{{ icon.copy }}</p>
 			</a>
 		</div>
-		<p class="copyright">Copyright 2024 | Alana Nanz</p>
+		<p class="copyright">© 2025 | Alana Nanz</p>
 	</footer>
 </template>
 

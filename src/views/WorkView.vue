@@ -32,11 +32,11 @@ export default {
 					tools: "Vue, Pinia state management, SVG animations",
 				},
 				{
-					name: "Are You Blacker Than ChatGPT?",
-					image: BlackerImg,
-					link: "https://www.areyoublackerthanchatgpt.com/",
-					description: "Internal DEI initiative game designed to reveal and explore AI biases related to black culture",
-					tools: "Vue, Sanity CMS, ChatGPT",
+					name: "McKinney",
+					image: McKinneyImg,
+					link: "https://mckinney.com/",
+					description: "Primary agency website with reusable custom block components",
+					tools: "Vue, WordPress, custom Gutenberg blocks, Advanced Custom Fields (ACF), Storybook",
 				},
 				{
 					name: "BrandAI",
@@ -46,11 +46,11 @@ export default {
 					tools: "API, Vue, Highcharts, Jira",
 				},
 				{
-					name: "McKinney",
-					image: McKinneyImg,
-					link: "https://mckinney.com/",
-					description: "Primary agency website with reusable custom block components",
-					tools: "Storybook, WordPress, Vue, custom Gutenberg blocks, Advanced Custom Fields (ACF)",
+					name: "Are You Blacker Than ChatGPT?",
+					image: BlackerImg,
+					link: "https://www.areyoublackerthanchatgpt.com/",
+					description: "Internal DEI initiative game designed to reveal and explore AI biases related to black culture",
+					tools: "Vue, Sanity CMS, ChatGPT",
 				},
 			],
 		};

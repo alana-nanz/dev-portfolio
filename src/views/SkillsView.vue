@@ -17,15 +17,15 @@ export default {
 			skills: [
 				{
 					category: "Languages",
-					type: ["HTML", "CSS / SCSS", "Javascript", "TypeScript"],
+					type: ["HTML", "CSS / SCSS", "Javascript"],
 				},
 				{
 					category: "Frameworks & Libraries",
-					type: ["Vue.js", "Nuxt.js", "Storybook.js", "Highcharts"],
+					type: ["Vue.js", "Nuxt.js", "Storybook.js", "Highcharts", "GSAP"],
 				},
 				{
 					category: "Tools",
-					type: ["Git", "Figma", "Vercel", "WP Engine", "Google Analytics", "APIs", "Jira", "WordPress", "Veeva", "Salesforce"],
+					type: ["Git", "Figma", "Vercel", "WP Engine", "Google Analytics", "APIs", "Jira", "WordPress", "Veeva", "Salesforce", "Sanity", "Contentful"],
 				},
 			],
 		};

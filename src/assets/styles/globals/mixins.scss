@@ -16,8 +16,8 @@
 		@include media-query("max-height: #{$mobile-restrict-orientation}") { @content; }
 	}
 
-	@mixin tablet-landscape-max() {
-    @include media-query("max-width: #{$tablet-landscape}") {@content; }
+	@mixin tablet-landscape() {
+    @include media-query("min-width: #{$tablet-landscape}") { @content; }
   }
 
 	@mixin tablet-only() {

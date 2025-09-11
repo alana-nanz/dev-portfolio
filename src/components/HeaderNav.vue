@@ -60,7 +60,7 @@ h2 { margin-bottom: $spacing-xs; }
 p { margin-bottom: 0; }
 
 ul {
-	margin: $spacing-sm 0 0;
+	margin: $spacing-md 0 0;
 	padding: 0;
 	display: flex;
 	gap: $spacing-md;
@@ -76,7 +76,7 @@ ul {
 		bottom: $spacing-xs;
 	}
 
-	@include tablet {
+	@include tablet-landscape {
 		display: block;
 		margin: $spacing-lg 0;
 
