@@ -40,24 +40,16 @@ html, body {
 }
 
 .wrapper {
-	height: 100vh;
 	width: 100%;
-	max-width: 1400px;
 	padding: $spacing-sm;
 	margin: 0 auto;
 	position: relative;
 
 	@include tablet-landscape {
-		max-height: 1000px;
 		display: flex;
 		justify-content: center;
 		gap: $spacing-md;
 		padding: $spacing-lg;
-	}
-
-	@include desktop {
-		max-height: 800px;
-		padding: $spacing-xl;
 	}
 }
 
@@ -71,14 +63,10 @@ html, body {
 
 	@include tablet-landscape {
 		margin: 0;
-		position: absolute;
-		bottom: $spacing-lg;
+		position: fixed;
+		top: calc(100vh - $spacing-lg);
 		left: $spacing-lg;
-	}
-
-	@include desktop {
-		bottom: $spacing-xl;
-		left: $spacing-xl;
+		transform: translateY(-100%);
 	}
 }
 </style>

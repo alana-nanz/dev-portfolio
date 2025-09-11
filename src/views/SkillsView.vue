@@ -25,7 +25,11 @@ export default {
 				},
 				{
 					category: "Tools",
-					type: ["Git", "Figma", "Vercel", "WP Engine", "Google Analytics", "APIs", "Jira", "WordPress", "Veeva", "Salesforce", "Sanity", "Contentful"],
+					type: ["Git", "Vercel", "Firebase", "WP Engine", "Figma", "Google Analytics", "APIs", "Jira"],
+				},
+				{
+					category: "CMS & CRM",
+					type: ["WordPress", "Sanity", "Contentful", "Hubspot", "Veeva", "Salesforce"],
 				},
 			],
 		};

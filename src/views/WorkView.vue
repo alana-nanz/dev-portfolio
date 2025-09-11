@@ -14,16 +14,41 @@
 </template>
 
 <script>
-import BrandAIImg from "@/assets/images/projects/brandai.png";
 import CryptoImg from "@/assets/images/projects/crypto-craze.png";
 import BlackerImg from "@/assets/images/projects/blacker.png";
 import McKinneyImg from "@/assets/images/projects/mckinney.png";
+import CheilImg from "@/assets/images/projects/cheil.png";
+import AttentionImg from "@/assets/images/projects/attention.png";
+import PrideImg from "@/assets/images/projects/pride.png";
+import CylndrImg from "@/assets/images/projects/cylndr.png";
+import SlickImg from "@/assets/images/projects/slick.png";
 
 export default {
 	name: "ProjectsView",
 	data() {
 		return {
 			projects: [
+				{
+					name: "Cylndr",
+					image: CylndrImg,
+					link: "https://cylndr.com/",
+					description: "Agency website featuring a horizontal scroll",
+					tools: "Vue, Sanity, GSAP",
+				},
+				{
+					name: "McKinney",
+					image: McKinneyImg,
+					link: "https://mckinney.com/",
+					description: "Agency website with reusable custom block components",
+					tools: "Vue, WordPress, custom Gutenberg blocks, Advanced Custom Fields (ACF), Storybook",
+				},
+				{
+					name: "Slick Wheels",
+					image: SlickImg,
+					link: "https://shadysamslickwheels.com/",
+					description: "Education game about buying a car for client NGPF",
+					tools: "Vue, Pinia state management, WordPress",
+				},
 				{
 					name: "Crypto Craze",
 					image: CryptoImg,
@@ -32,18 +57,25 @@ export default {
 					tools: "Vue, Pinia state management, SVG animations",
 				},
 				{
-					name: "McKinney",
-					image: McKinneyImg,
-					link: "https://mckinney.com/",
-					description: "Primary agency website with reusable custom block components",
-					tools: "Vue, WordPress, custom Gutenberg blocks, Advanced Custom Fields (ACF), Storybook",
+					name: "Hearting Pride",
+					image: PrideImg,
+					link: "https://heartingpride.com/",
+					description: "Digital hub featuring Pride content and LGBTQ+ creators",
+					tools: "Firebase, Python, Google Sheets API, Google Cloud Storage",
 				},
 				{
-					name: "BrandAI",
-					image: BrandAIImg,
-					link: "https://mckinney.com/brandai/",
-					description: "Proprietary AI app for measuring a brand's market attention compared to its competitors",
-					tools: "API, Vue, Highcharts, Jira",
+					name: "Attention Arc",
+					image: AttentionImg,
+					link: "https://attentionarc.com/",
+					description: "Landing page for our sister media agency",
+					tools: "Vue, WordPress, video transparency effects with HTML5 Canvas",
+				},
+				{
+					name: "Cheil Agency Network",
+					image: CheilImg,
+					link: "https://cheilagencynetwork.com/",
+					description: "Landing page showcasing five agencies",
+					tools: "Vue, WordPress, Hubspot",
 				},
 				{
 					name: "Are You Blacker Than ChatGPT?",
