@@ -70,7 +70,7 @@ ul {
 		text-align: center;
 		text-transform: uppercase;
 		padding: $spacing-xs;
-		width: 40%;
+		width: calc(50% - $spacing-xs);
 
 		@include desktop { width: 30%; }
 	}
