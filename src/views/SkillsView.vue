@@ -25,7 +25,7 @@ export default {
 				},
 				{
 					category: "Tools",
-					type: ["Figma", "Git", "Github Actions (CI/CD)", "Vercel", "Firebase", "WP Engine", "Google Analytics (GA4)", "API Integration", "Jira"],
+					type: ["Figma", "Git", "Github Actions (CI/CD)", "Vercel", "Firebase", "WP Engine", "AWS (S3)", "Google Analytics (GA4)", "API Integration", "Jira"],
 				},
 				{
 					category: "CMS & CRM",
