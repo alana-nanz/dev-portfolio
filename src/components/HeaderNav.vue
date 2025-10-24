@@ -2,9 +2,7 @@
 	<header>
 		<h1>Alana Nanz</h1>
 		<h2>Developer</h2>
-		<p class="intro">Proficient at transforming design mockups into user-friendly, responsive applications with meticulous attention to detail.
-		</p>
-		<p class="intro">Enthusiastic about creating scalable architecture and writing clean code.
+		<p class="intro">Proficient at transforming designs into user-friendly, responsive applications with meticulous attention to detail. Enthusiastic about creating scalable architecture and writing clean code.
 		</p>
 		<nav>
 			<ul>

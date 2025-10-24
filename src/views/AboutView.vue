@@ -1,6 +1,6 @@
 <template>
 	<div class="about view">
-		<p>Currently, I'm a <strong>Developer</strong> at <a href="https://cylndr.com/" target="_blank">Cylndr Studios</a>, the production team behind advertising agency, <a href="https://mckinney.com/" target="_blank">McKinney</a>. I started as a Junior Developer in 2022 and was promoted after only 18 months. At Cylndr, I've developed enterprise websites, landing pages, interactive games, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
+		<p>Currently, I'm a Developer at <a href="https://cylndr.com/" target="_blank">Cylndr Studios</a>, a production agency working closely with advertising agency, <a href="https://mckinney.com/" target="_blank">McKinney</a>. At Cylndr, I've developed enterprise websites, landing pages, interactive games, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
 		<div class="logos">
 			<img class="logo" v-for="logo in logos" :key="logo" :src="logo.img" :alt="logo.name">
 		</div>
