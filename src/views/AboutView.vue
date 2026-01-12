@@ -5,6 +5,7 @@
 			<img class="logo" v-for="logo in logos" :key="logo" :src="logo.img" :alt="logo.name">
 		</div>
 		<p>Beyond coding, I collaborate with designers, producers, and strategists to bring creative concepts to life and ensure technology enhances the overall brand and user experience. My work often involves developing solutions that streamline workflows and improve efficiency.</p>
+		<p>I actively integrate AI into my development workflow, using it to speed up problem-solving, explore technical approaches, and improve code quality. It’s become a core part of how I work more efficiently and iterate faster.</p>
 		<p>I bring a blend of technical expertise and creative problem-solving to my work after transitioning from a career in nonprofit arts management. I've always been creative, with a strong eye for detail. After working in platforms like WordPress and Drupal, I wanted to see what was under the hood and learn how to code. After creating my first website from scratch, I was hooked!</p>
 		<p>When I'm not coding, you can find me doing puzzles, cooking new recipes, walking the local trails with my bernedoodle, or going on adventures with my two daughters and wonderful husband.</p>
 	</div>
