@@ -43,10 +43,13 @@ export default {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: $spacing-md;
-	margin: $spacing-md $spacing-sm;
+	margin: $spacing-md 0;
 	max-width: 600px;
 
-	@include tablet { gap: $spacing-sm; }
+	@include tablet {
+		gap: $spacing-sm;
+		margin: calc($spacing-sm + $spacing-xxs) $spacing-sm;
+	}
 }
 
 .freelance-logos { justify-content: center; }
