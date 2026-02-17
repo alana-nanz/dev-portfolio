@@ -21,15 +21,15 @@ export default {
 				},
 				{
 					category: "Frameworks & Libraries",
-					type: ["Vue.js", "Nuxt.js", "Storybook.js", "Highcharts", "GSAP"],
+					type: ["Vue.js", "Nuxt.js", "Storybook.js", "GSAP", "Highcharts"],
 				},
 				{
 					category: "Tools",
-					type: ["Figma", "Photoshop", "Git", "Github Actions (CI/CD)", "Vercel", "Firebase", "WP Engine", "AWS (S3)", "Google Analytics (GA4)", "API Integration", "Jira"],
+					type: ["Figma", "Photoshop", "Git", "Github Actions (CI/CD)", "WP Engine", "Vercel", "Firebase", "AWS (S3)", "Google Analytics (GA4)", "API Integration", "Jira"],
 				},
 				{
 					category: "CMS & CRM",
-					type: ["WordPress", "Sanity", "Contentful", "Hubspot", "Veeva", "Salesforce"],
+					type: ["WordPress", "Sanity", "Hubspot", "Veeva", "Salesforce"],
 				},
 			],
 		};
