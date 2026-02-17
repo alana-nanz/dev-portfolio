@@ -42,13 +42,14 @@ export default {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	gap: $spacing-md;
-	margin: $spacing-md 0;
+	gap: calc($spacing-sm + $spacing-xs);
+	margin: calc($spacing-sm + $spacing-xs) auto;
 	max-width: 600px;
+	width: 100%;
 
 	@include tablet {
 		gap: $spacing-sm;
-		margin: calc($spacing-sm + $spacing-xxs) $spacing-sm;
+		margin: calc($spacing-sm + $spacing-xxs) auto;
 	}
 }
 
