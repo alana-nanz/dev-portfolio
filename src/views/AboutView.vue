@@ -1,6 +1,6 @@
 <template>
 	<div class="about view">
-		<p>Currently, I'm a Developer at <a href="https://cylndr.com/" target="_blank"><b>Cylndr Studios</b></a>, where I've developed enterprise websites, landing pages, interactive games, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
+		<p>Currently, I'm a Developer at <a href="https://cylndr.com/" target="_blank"><b>Cylndr Studios</b></a>, where I've developed enterprise websites, landing pages, interactive games, TikTok Effects, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
 		<div class="logos">
 			<img class="logo" v-for="logo in logos" :key="logo" :src="logo.img" :alt="logo.name">
 		</div>
@@ -16,10 +16,11 @@
 </template>
 
 <script>
-import Indivior from "@/assets/images/logos/indivior.png";
+import Ross from "@/assets/images/logos/ross.png";
 import LittleCaesars from "@/assets/images/logos/little_caesars.png";
 import Popeyes from "@/assets/images/logos/popeyes.png";
 import Sherwin from "@/assets/images/logos/sherwin.png";
+import TexasPete from "@/assets/images/logos/texas-pete.png";
 
 export default {
 	name: "AboutView",
@@ -29,7 +30,8 @@ export default {
 				{ name: "Little Caesars", img: LittleCaesars },
 				{ name: "Sherwin Williams", img: Sherwin },
 				{ name: "Popeyes", img: Popeyes },
-				{ name: "Indivior", img: Indivior },
+				{ name: "Ross", img: Ross },
+				{ name: "Texas Pete", img: TexasPete },
 			],
 		};
 	},
@@ -40,24 +42,18 @@ export default {
 .logos {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
-	gap: calc($spacing-sm + $spacing-xs);
-	margin: calc($spacing-sm + $spacing-xs) auto;
-	max-width: 600px;
+	gap: $spacing-sm $spacing-md;
+	margin: $spacing-sm auto;
 	width: 100%;
 
-	@include tablet {
-		gap: $spacing-sm;
-		margin: calc($spacing-sm + $spacing-xxs) auto;
-	}
+	@include tablet { gap: $spacing-md; }
 }
 
-.freelance-logos { justify-content: center; }
-
 .logo {
-	width: calc(50% - $spacing-md);
+	width: calc(33% - 1.3em);
 
-	@include tablet { width: 120px; }
+	@include tablet { width: calc(20% - 1.6em); }
 }
 </style>

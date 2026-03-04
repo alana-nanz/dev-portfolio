@@ -33,6 +33,7 @@ html, body {
 	color: $dark-color;
 	font-family: $body-font;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 #app {
