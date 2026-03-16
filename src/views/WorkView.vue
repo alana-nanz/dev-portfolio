@@ -5,7 +5,7 @@
 				<div class="project-img">
 					<img :src="project.image" :alt="project.name">
 				</div>
-				<a :href="project.link" target="_blank" class="name">{{ project.name }}</a>
+				<a :href="project.link" target="_blank" rel="noopener noreferrer" class="name">{{ project.name }}</a>
 				<p>{{ project.description }}</p>
 				<p><strong>Highlights: </strong>{{ project.tools }}</p>
 			</div>

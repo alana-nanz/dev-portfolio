@@ -1,6 +1,6 @@
 <template>
 	<div class="about view">
-		<p>Currently, I'm a Developer at <a href="https://cylndr.com/" target="_blank"><b>Cylndr Studios</b></a>, where I've developed enterprise websites, landing pages, interactive games, TikTok Effects, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
+		<p>Currently, I'm a Developer at <a href="https://cylndr.com/" target="_blank" rel="noopener noreferrer"><b>Cylndr Studios</b></a>, where I've developed enterprise websites, landing pages, interactive games, TikTok Effects, HTML emails, animated banners, and web applications for internal initiatives and clients, including:</p>
 		<div class="logos">
 			<img class="logo" v-for="logo in logos" :key="logo" :src="logo.img" :alt="logo.name">
 		</div>

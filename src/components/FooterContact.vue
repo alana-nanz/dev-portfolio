@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer-contact">
 		<div class="icons">
-			<a v-for="icon in icons" :key="icon" :href="icon.link" target="_blank">
+			<a v-for="icon in icons" :key="icon" :href="icon.link" target="_blank" rel="noopener noreferrer">
 				<component :is="icon.svg" class="icon" />
 				<p class="sr-only">{{ icon.copy }}</p>
 			</a>
