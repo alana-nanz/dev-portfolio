@@ -7,6 +7,7 @@
 		<p>In addition to my full-time role, I take on freelance projects, delivering thoughtful, reliable digital experiences for clients such as:</p>
 		<div class="logos freelance-logos">
 			<img class="logo" src="@/assets/images/logos/publix.png" :alt="Publix">
+			<Tropicana class="logo" :alt="Tropicana" />
 		</div>
 		<p>Beyond coding, I collaborate with designers, producers, and strategists to bring creative concepts to life and ensure technology enhances the overall brand and user experience. My work often involves developing solutions that streamline workflows and improve efficiency.</p>
 		<p>I actively integrate AI into my development workflow, using it to speed up problem-solving, explore technical approaches, and improve code quality. It’s become a core part of how I work more efficiently and iterate faster.</p>
@@ -21,9 +22,11 @@ import LittleCaesars from "@/assets/images/logos/little_caesars.png";
 import Popeyes from "@/assets/images/logos/popeyes.png";
 import Sherwin from "@/assets/images/logos/sherwin.png";
 import TexasPete from "@/assets/images/logos/texas-pete.png";
+import Tropicana from "@/assets/images/logos/tropicana.svg";
 
 export default {
 	name: "AboutView",
+	components: { Tropicana },
 	data() {
 		return {
 			logos: [
