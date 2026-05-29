@@ -1,5 +1,5 @@
 <template>
-	<div class="projects view">
+	<div class="projects">
 		<div class="projects">
 			<div class="project" v-for="project in projects" :key="project.name">
 				<div class="project-img">
