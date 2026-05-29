@@ -25,8 +25,27 @@
 </template>
 
 <script>
+import Ross from "@/assets/images/logos/ross.png";
+import LittleCaesars from "@/assets/images/logos/little_caesars.png";
+import Popeyes from "@/assets/images/logos/popeyes.png";
+import Sherwin from "@/assets/images/logos/sherwin.png";
+import TexasPete from "@/assets/images/logos/texas-pete.png";
+import Tropicana from "@/assets/images/logos/tropicana.svg";
+
 export default {
 	name: "AboutView",
+	components: { Tropicana },
+	data() {
+		return {
+			logos: [
+				{ name: "Little Caesars", img: LittleCaesars },
+				{ name: "Sherwin Williams", img: Sherwin },
+				{ name: "Popeyes", img: Popeyes },
+				{ name: "Ross", img: Ross },
+				{ name: "Texas Pete", img: TexasPete },
+			],
+		};
+	},
 };
 </script>
 

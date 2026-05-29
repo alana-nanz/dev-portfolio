@@ -12,8 +12,67 @@
 <script>
 export default {
 	name: "SkillsView",
+	data() {
+		return {
+			skills: [
+				{
+					category: "Languages",
+					type: ["HTML", "CSS / SCSS", "Javascript"],
+				},
+				{
+					category: "Frameworks & Libraries",
+					type: ["Vue.js", "Nuxt.js", "Storybook.js", "GSAP", "Highcharts"],
+				},
+				{
+					category: "Tools",
+					type: ["Figma", "Photoshop", "Git", "Github Actions (CI/CD)", "WP Engine", "Vercel", "Firebase", "AWS (S3)", "Google Analytics (GA4)", "API Integration", "Jira"],
+				},
+				{
+					category: "CMS & CRM",
+					type: ["WordPress", "Sanity", "Hubspot", "Veeva", "Salesforce"],
+				},
+			],
+		};
+	},
 };
 </script>
 
 <style lang="scss" scoped>
+.skills {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: $spacing-md;
+}
+
+.skill {
+	width: 100%;
+}
+
+.category {
+	font-weight: $font-weight-bold;
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: $spacing-xs;
+	margin: 0;
+	padding: 0;
+
+	li {
+		@include flex-column-center;
+		list-style-type: none;
+		background-color: $accent-color-light;
+		border-radius: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		padding: $spacing-xs;
+		width: calc(50% - $spacing-xs);
+
+		@include desktop { width: 30%; }
+	}
+}
 </style>

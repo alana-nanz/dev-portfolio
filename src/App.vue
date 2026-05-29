@@ -13,25 +13,19 @@
 			</RouterView>
 		</div>
 		<FooterContact class="footer" />
+		<FooterContact class="footer" />
 	</div>
 </template>
 
 <script>
-import { storeToRefs } from "pinia";
-import { useConfigStore } from '@/stores/config.store';
-import HeaderNav from '@/components/HeaderNav.vue';
+import HeaderNav from "@/components/HeaderNav.vue";
+import FooterContact from "@/components/FooterContact.vue";
 
 export default {
 	name: "App",
 	components: {
 		HeaderNav,
-	},
-	setup() {
-		const config = useConfigStore();
-		const { loaded } = storeToRefs(config);
-		config.load();
-
-		return { loaded };
+		FooterContact,
 	},
 };
 </script>
@@ -42,17 +36,15 @@ export default {
 @import 'assets/base.css';
 
 html, body {
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	font-family: $body-font;
+	background-color: $light-color;
 	color: $dark-color;
+	font-family: $body-font;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 #app {
-	height: 100%;
 	margin: 0 auto;
-	background-color: $light-color;
 }
 
 .wrapper {

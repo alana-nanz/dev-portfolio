@@ -2,8 +2,7 @@
 	<header>
 		<h1>Alana<br>Nanz</h1>
 		<h2>Developer</h2>
-		<p>Proficient at transforming design mockups into user-friendly,
-			<br>responsive applications with meticulous attention to detail.
+		<p class="intro">Proficient at transforming designs into user-friendly, responsive applications with meticulous attention to detail. Enthusiastic about creating scalable architecture and writing clean code.
 		</p>
 		<nav>
 			<ul>
@@ -14,24 +13,15 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="copyright">
-			<Icon class="icon" />
-			<p>Copyright 2024 | Alana Nanz</p>
-		</div>
 	</header>
 </template>
 
 <script>
-import Icon from "@/assets/images/icon.svg";
-
 export default {
 	name: "HeaderNav",
-	components: {
-		Icon,
-	},
 	data() {
 		return {
-			sections: ['About', 'Projects', 'Skills', 'Contact'],
+			sections: ['About', 'Work', 'Skills'],
 		};
 	},
 	methods: {
@@ -86,11 +76,36 @@ h2 {
 }
 h2 { margin-bottom: $spacing-xs; }
 
+.intro {
+	max-width: 475px;
+	margin-bottom: $spacing-xs;
+}
+
 p { margin-bottom: 0; }
 
 ul {
-	margin: $spacing-lg 0 $spacing-xxl;
+	margin: $spacing-md 0 0;
 	padding: 0;
+	display: flex;
+	gap: $spacing-md;
+	position: relative;
+	width: 100%;
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $accent-color;
+		position: absolute;
+		bottom: $spacing-xs;
+	}
+
+	@include tablet-landscape {
+		display: block;
+		margin: $spacing-lg 0;
+
+		&::after { display: none; }
+	}
 }
 
 li {
@@ -122,16 +137,5 @@ a {
 		color: $accent-color;
 		font-weight: $font-weight-bold;
 	}
-}
-
-.copyright {
-	display: flex;
-	align-items: flex-end;
-	gap: $spacing-xs;
-	font-size: var(--fs-300);
-}
-
-.icon {
-	height: 25px;
 }
 </style>
