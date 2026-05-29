@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<h1>Alana Nanz</h1>
+		<h1>Alana<br>Nanz</h1>
 		<h2>Developer</h2>
 		<p>Proficient at transforming design mockups into user-friendly,
 			<br>responsive applications with meticulous attention to detail.
@@ -50,14 +50,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header { position: relative; }
-
 h1 {
+	font-family: $heading-font;
 	font-size: var(--fs-lg);
 	font-weight: 900;
-	line-height: $line-height-relaxed;
+	line-height: $line-height-snug;
 }
 
+h2 {
+	font-family: $heading-font;
+	font-size: var(--fs-400);
+	font-weight: 700;
+	margin: 1.5em 0;
+	text-transform: uppercase;
+	letter-spacing: $letter-spacing-plus;
+	position: relative;
+	width: max-content;
+
+	&::after {
+		content: '';
+		background-color: $accent-color;
+		width: 50px;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: calc(100% + $spacing-xs);
+		animation: line-grow 1s ease-out forwards;
+	}
+}
+
+@keyframes line-grow {
+	0% { width: 0; }
+	100% { width: 50px; }
+}
 h2 { margin-bottom: $spacing-xs; }
 
 p { margin-bottom: 0; }
@@ -73,8 +99,24 @@ li {
 }
 
 a {
-	color: $dark-color;
+	color: $neutral-dark-color;
+	letter-spacing: $letter-spacing-plus;
 	text-transform: uppercase;
+	position: relative;
+
+	&::after {
+		content: '';
+		background-color: $accent-color;
+		border-radius: 50%;
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -12px;
+		opacity: 0;
+		transition: opacity $ui-transition-duration;
+	}
 
 	&.active {
 		color: $accent-color;

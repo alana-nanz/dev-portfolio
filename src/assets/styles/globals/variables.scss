@@ -2,11 +2,13 @@
 	Colors
 	==================================================================== */
 
-	$dark-color													: #000000;
-	$light-color												: #F0EFEB;
-	$accent-color												: #a6808c;
-	$accent-color-light									: lighten($accent-color, 20%);
-	
+	$dark-color													: #1C1C2E;
+	$light-color												: #F5F5F5;
+	$accent-color												: #C026D3;
+	$accent-color-light									: lighten($accent-color, 25%);
+	$neutral-dark-color									: #9C9C9C;
+	$neutral-light-color								: #E8E8E8;
+	$neutral-medium-color							  : #E2E2E2;
 
 /* =====================================================================
 	Layout
@@ -37,7 +39,7 @@
 	==================================================================== */
 
 	$body-font													:	'Open Sans', sans-serif;
-	$heading-font												: 'Playfair Display', serif;
+	$heading-font												: 'Sora', sans-serif;
 
 	$letter-spacing-base								: .02em;
 	$letter-spacing-plus								: .05em;
